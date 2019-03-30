@@ -76,7 +76,6 @@ int main()
 
     if(CUE_SUCCESS != CU_initialize_registry()) return CU_get_error();
 
-    //CU_initialize_registry();
     CU_pSuite suite = CU_add_suite("Testing heap features",0,0);
     CU_add_test(suite,"create_hash test",create_heap_test);
     CU_add_test(suite,"swap test",swap_test);
